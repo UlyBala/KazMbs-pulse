@@ -1,4 +1,44 @@
 .maps{
     background: url('../img/map.png') center center/cover no-repeat;
     height: 63rem;
+    display: flex;
+    justify-content: center;
+
+    &__number{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2rem; /* 100% */        
+    }
+
+    &__address{
+        padding-top: 3.6rem;
+        display: flex;
+        justify-content: center;
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2rem; /* 100% */        
+    }
+    &__inner{
+        background-color: $main-color;
+        width: 46rem;
+        height: 27rem;
+    }
+
+    &__item{
+        border-radius: 50%;
+        border:0.2rem solid #FFF;
+        padding: 1.4rem;
+    }
+
+    &__social{
+        margin-top: 3.6rem;
+        display: flex;
+        justify-content: center;
+        gap: 2.7rem;
+    }
 }

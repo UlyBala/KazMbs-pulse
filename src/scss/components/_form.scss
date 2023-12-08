@@ -1,0 +1,22 @@
+.consultation-form{
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+    &__input{
+        width: 30.3rem;
+        height: 5.4rem;
+        border-radius: 0.5rem;
+        gap: 1.1rem;
+        padding-left: 2rem;
+        color: #4B4B4B;
+        font-size: 1.4rem;
+        font-weight: 400;
+        border: none;
+        color:#4B4B4B;
+        &::placeholder{
+            color: black;
+
+        }
+       
+    }
+}
