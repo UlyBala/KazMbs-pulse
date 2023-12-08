@@ -1,0 +1,35 @@
+.reviews{
+    margin-top: 10rem;
+
+    .reviews-person{
+        display: flex;
+        gap: 6.2rem;
+        margin-top: 6rem;
+
+        &__img{
+            width: 16.9rem;
+            height: 16.9rem;
+        }
+        &__name{
+            color: #0D0D0D;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 18px; /* 100% */    
+    
+            
+            span{
+                color: #646464;
+                font-size: 14px;
+                font-weight: 500;           
+            }
+        }
+
+        &__desrc{
+            margin-top: 1rem;
+            color: #0D0D0D;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px; /* 150% */            
+        }
+    }
+}

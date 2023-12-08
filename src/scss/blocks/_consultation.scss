@@ -1,0 +1,42 @@
+.consultation{
+    background: url('/src/img/bg2.png')center center/cover no-repeat;
+    &__title{
+        color: #FFF;
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: 5.4rem; 
+        text-transform: uppercase;  
+        padding-top: 10rem;      
+    }
+
+    &__subtitle{
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 3rem; /* 150% */
+        padding: 0.8rem 0 3.6rem;
+    }
+    &__button{
+        margin-top: 0.5rem;
+        margin-bottom: 10.8rem;
+    }
+}
+
+.consultation-form{
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+    &__input{
+        width: 30.3rem;
+        height: 5.4rem;
+        border-radius: 0.5rem;
+        gap: 1.1rem;
+        padding-left: 2rem;
+        color: #4B4B4B;
+        font-size: 1.4rem;
+        font-weight: 400;
+        border: none;
+        // margin-bottom: 1.2rem;
+        // line-height: 66px; /* 471.429% */       
+    }
+}

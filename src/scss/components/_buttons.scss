@@ -1,0 +1,67 @@
+.button{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: $main-color;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    &_main{
+        width: 30rem;
+        height: 5rem;
+        font-size: 1.6rem
+    }       
+}
+
+.button__product{
+    margin-top: 1rem;
+    background-color: transparent;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    border: none;
+    color:$main-color;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+
+    cursor: pointer;
+}
+
+.button-buy{
+    color:#fff;
+    background-color: $main-color;
+    width: 13.5rem;
+    height: 4.4rem;
+    border: none;
+    border-radius: 0.5rem;
+    
+}
+
+// header{
+//     button{
+//         width: 15.3rem;
+//         color:#fff;
+//         border:0.8rem solid #C70101;
+//         border-radius: 0.5rem;
+//         background-color: #C70101;
+//         font-size: 1.2rem;
+//         text-transform: uppercase;
+
+//     }
+// }
+
+// .services {
+//     button{
+//         width: 30rem;
+//         color:#fff;
+//         padding: 1.2rem 1.8rem 1.3rem;
+//         border: none;
+//         border-radius: 0.5rem;
+//         background-color: #C70101;
+//         font-size: 1.6rem;
+//         text-transform: uppercase;
+
+//     }
+// }

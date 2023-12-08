@@ -1,0 +1,76 @@
+.promo {
+    min-height: 65rem;
+    padding: 2.1rem 0 9.3rem 0;
+    background: url('../img/bg.png') center center/cover no-repeat;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+       
+    }
+    &__header{
+        margin-top: 9.4rem;
+        color: #FFF;
+        text-align: right;
+        font-size: 4.2rem;
+        font-weight: 700;
+        line-height: 4.2rem;
+        text-transform: uppercase;    
+
+    }
+
+    &__subheader{
+        margin: 1.7rem 0 6rem;
+        color: #FFF;
+        text-align: right;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+        text-transform: uppercase;    
+    }
+
+    &__advantages{
+        display: flex;
+        width: 424px;
+        height: 96px;  
+        margin-bottom: 6.8rem;
+
+
+        span{
+            color: #FFF;
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.4rem; /* 100% */            
+        }
+        
+
+    }
+
+    &__offer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+    .promo-icon{
+        margin-bottom: 2rem;
+        width: 4.2rem;
+        height: 4.6rem;
+    }
+
+    &__catalog{
+        margin-top: 1rem;
+        color: #FFF;
+        font-size: 1.6rem;
+        font-weight: 500;
+        
+        a {
+            color:#FFF;
+        }
+    }
+}
+
