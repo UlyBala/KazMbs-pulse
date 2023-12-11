@@ -1,5 +1,4 @@
 .catalog{
-    
     &__title{
         margin-top: 10rem;
         margin-bottom: 4.6rem;
@@ -11,32 +10,36 @@
         text-transform: uppercase;        
     }
     .catalog-heart{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap:6.6rem;
-        margin-top: 10rem;    }
+        margin-top: 10rem;
+    }
 
-    .left, 
-    .right {
+    .slider {
+        &__item {
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .slick-prev,
+    .slick-next {
         display: inline-flex;
         width: 3rem;
         height: 3rem;
         border-radius: 0.5rem;
     }
 
-    .left{
+    .slick-prev{
         border-top: 0.7rem solid red;
         border-left: 0.7rem solid red;
         transform: rotate(-45deg);
 
     }
 
-    .right{
+    .slick-next{
         border-top: 0.7rem solid red;
         border-right: 0.7rem solid red;
         transform: rotate(45deg);
-
     }
 
     &__item{
