@@ -1,0 +1,20 @@
+.scroll{
+    padding: 8.1rem;
+    .slider {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+
+        &__item {
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .slick-prev,
+    .slick-next {
+        border: none;
+        background-color: transparent;
+    }
+}
