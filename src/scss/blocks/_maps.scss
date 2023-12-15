@@ -1,8 +1,7 @@
 .maps{
-    background: url('../img/map.png') center center/cover no-repeat;
     height: 63rem;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    margin-top: 4.9rem;
 
     &__number{
         margin-top: 5rem;
@@ -27,6 +26,10 @@
         background-color: $main-color;
         width: 46rem;
         height: 27rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     &__item{

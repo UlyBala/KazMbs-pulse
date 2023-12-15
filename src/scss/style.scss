@@ -1,16 +1,9 @@
-html {
-    font-size: 10px;
-    
-}
-
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
 
-
-.container {
-    max-width: 95rem;
-    margin: 0 auto;
+html {
+    font-size: 10px;
 }
 
 // base
@@ -36,4 +29,5 @@ html {
 @import 'components/containers';
 @import 'components/form';
 @import "components/slick";
+@import "components/modal";
 

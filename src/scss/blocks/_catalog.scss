@@ -42,7 +42,7 @@
 
         &_active {
             color: white;
-            background-color: red;
+            background-color: $main-color;
             border: none;
         }
     }
@@ -55,12 +55,23 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 
-    &__item{
+    &__item {
+        min-height: 32rem;
+        border: 0.2rem solid #E8E8E8;
+        overflow: hidden;
+    }
+
+    &__wrapper {
+        display: flex;
+        width: calc(200% + 40px);
+    }
+
+    &__info{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 0.2rem solid #E8E8E8;
-        
+        width: 47%;
+        transition: .5s all;
         hr{
             margin-top: 1.7rem;
             height: 0.4rem;
@@ -68,7 +79,19 @@
             border: none;
             background-color: #E8E8E8;
         }
-        
+
+        &_active {
+            transform: translateX(100%);
+        }
+    }
+
+    &__list {
+        width: 47%;
+        padding: 2rem;
+        transition: .5s all;
+        &_active {
+            transform: translateX(-100%);
+        }
     }
 
     &__img{

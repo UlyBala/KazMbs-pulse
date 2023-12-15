@@ -1,0 +1,56 @@
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba($color: #000000, $alpha: 0.56);
+
+    &_none {
+        display: none;
+    }
+}
+
+.modal {
+    width: 38.2rem;
+    margin: 10em auto 0;
+    padding: 2.8rem 3rem 4rem;
+    background-color: #F2F2F2;
+    position: relative;
+    
+    &__subtitle {
+        text-align: center;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 19px; /* 100% */
+    }
+
+    &__desc {
+        margin-bottom: 2.6rem;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px; /* 100% */
+    }
+
+    &__close {
+        width: 2.1rem;
+        height: 2.1rem;
+        position: absolute;
+        top: 0;
+        right: -4rem;
+        background: url("../icons/close.svg") no-repeat center;
+        background-size: cover;
+    }
+}
+
+.modal_consultation {
+    display: none;
+}
+
+.modal_order {
+    display: none;
+}
+
+.modal_show {
+    display: block;
+}
