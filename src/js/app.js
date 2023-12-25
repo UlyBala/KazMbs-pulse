@@ -29,13 +29,6 @@ $(document).ready(function(){
         })
     })
 
-   /* $('#consultation_btn').on('click', function () {
-        $(".overlay").removeClass('overlay_none')
-    })*/
-   /* $('#modal-close-btn').on('click', function () {
-        $(".overlay").addClass('overlay_none')
-    })*/
-
     $('.consultation_btn').each(function (i) {
         $(this).on('click', function () {
             $(".overlay").removeClass('overlay_none')
@@ -57,4 +50,37 @@ $(document).ready(function(){
             $(".modal_order").removeClass('modal_show')
         })
     })
+
+    $('input[name=phone]').mask("+8(999) 999-9999");
+
+    function validateForms(form){
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите свое имя",
+                    minlength: jQuery.validator.format("Введите {0} символа!")
+                },
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                    required: "Пожалуйста, введите свою почту",
+                    email: "Неправильно введен адрес почты"
+                }
+            }
+        });
+    }
+
+    validateForms('.consultation-form');
+    validateForms('.modal_consultation form');
+    validateForms('.modal_order form');
 });
