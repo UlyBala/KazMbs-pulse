@@ -80,7 +80,7 @@ $(document).ready(function(){
         });
     }
 
-    validateForms('.consultation-form');
-    validateForms('.modal_consultation form');
-    validateForms('.modal_order form');
+    // validateForms('.consultation-form');
+    // validateForms('.modal_consultation form');
+    // validateForms('.modal_order form');
 });

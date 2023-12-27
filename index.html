@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PULSE</title>
     <link rel="stylesheet" href="./src/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 </head>
 <body>
     <div class="promo">
@@ -87,8 +87,7 @@
             <div class="consultation__subtitle">
                 Просто заполните форму заявки<br>и мы перезвоним вам в течении 10 минут
             </div>
-
-                <form class="consultation-form" action="#" method="/">
+                <form class="consultation-form" data-form="form-1">
                     <input class="consultation-form__input" type="text" name="name" placeholder="Введите ваше имя">
                     <input class="consultation-form__input" type="tel" name="phone" placeholder="Введите ваш телефон">
                     <input class="consultation-form__input" type="email" name="email" placeholder="Введите ваш E-mail">
@@ -488,7 +487,7 @@
             <div class="modal__close"></div>
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__desc">и мы перезвоним вам в течении 10 минут</div>
-            <form class="feed-form" action="#" method="/">
+            <form class="feed-form" data-form="form-2">
                 <input name="name" placeholder="Ваше имя" type="text">
                 <input name="phone" placeholder="Ваш телефон" type="tel">
                 <input name="email" placeholder="Ваш E-mail" type="email">
@@ -501,13 +500,19 @@
             <div class="modal__close"></div>
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__desc">Пульсометр Polar FT1</div>
-            <form class="feed-form" action="#" method="/">
+            <form class="feed-form" data-form="form-3">
                 <input name="name" placeholder="Ваше имя" type="text">
                 <input name="phone" placeholder="Ваш телефон" type="tel">
                 <input name="email" placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_main  btn_submit" type="submit">Купить</button>
             </form>
+        </div>
+
+        <div class="modal  modal_finish">
+            <div class="modal__close"></div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__desc">Наш менеджер свяжется с вами <br/>в ближайшее время!</div>
         </div>
     </div>
 
